@@ -18,6 +18,7 @@ const test = {
 }
 
 const production = {
+  "use_env_variable": env.DATABASE_URI,
   "username": env.PRODUCTION_USERNAME,
   "password": env.PRODUCTION_PASSWORD,
   "database": env.PRODUCTION_DATABASE,
