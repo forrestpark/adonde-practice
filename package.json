@@ -4,7 +4,8 @@
   "description": "\"adonde practice folder\"",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
@@ -19,5 +20,13 @@
   },
   "devDependencies": {
     "dotenv": "^10.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/forrestpark/adonde-practice.git"
+  },
+  "bugs": {
+    "url": "https://github.com/forrestpark/adonde-practice/issues"
+  },
+  "homepage": "https://github.com/forrestpark/adonde-practice#readme"
 }
