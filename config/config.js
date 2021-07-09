@@ -1,6 +1,8 @@
 
 const env = process.env;
 
+console.log(env.DATABASE_URL);
+
 const development = {
   "username": env.POSTGRES_USERNAME,
   "password": env.POSTGRES_PASSWORD,
