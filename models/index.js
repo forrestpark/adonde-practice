@@ -12,7 +12,7 @@ console.log(process.env[config.use_env_variable]);
 
 let sequelize;
 if (config.use_env_variable) {
-  sequelize = new Sequelize(process.env[config.use_env_variable], config);
+  sequelize = new Sequelize('postgres://raptohzklcwxed:a8351f1190ee5bb759aa7dbfb12d351153873abc23389eaf0d6bb4d634ddb424@ec2-23-23-128-222.compute-1.amazonaws.com:5432/dch54qith12c4r', config);
 } else {
   sequelize = new Sequelize(config.database, config.username, config.password, config);
 }
