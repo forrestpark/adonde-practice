@@ -1,8 +1,8 @@
 
 const env = process.env;
 
-console.log(env.DATABASE_URL);
-console.log(env.NODE_ENV);
+console.log("env.DATABASE_URL: ", env.DATABASE_URL);
+console.log("env.NODE_ENV: ", env.NODE_ENV);
 
 const development = {
   "username": env.POSTGRES_USERNAME,
