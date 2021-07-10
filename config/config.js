@@ -21,7 +21,13 @@ const test = {
 
 const production = {
   "use_env_variable": "DATABASE_URL",
-  "dialect": 'postgres',
+  "dialect": "postgres",
+  "dialectOptions": {
+    "ssl": {
+      "require": true,
+      "rejectUnautorized": false,
+    },
+  },
 }
 
 module.exports = {development, test, production}
