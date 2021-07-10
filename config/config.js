@@ -24,8 +24,7 @@ const production = {
   "dialect": "postgres",
   "dialectOptions": {
     "ssl": {
-      "require": "true",
-      "rejectUnautorized": "false",
+      "rejectUnautorized": false,
     },
   },
 }
