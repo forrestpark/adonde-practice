@@ -1,4 +1,3 @@
-
 const env = process.env;
 
 console.log("env.DATABASE_URL: ", env.DATABASE_URL);
