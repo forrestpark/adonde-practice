@@ -23,7 +23,6 @@ const production = {
   "use_env_variable": "DATABASE_URL",
   "dialect": "postgres",
   "ssl": {
-    "require": true,
     "rejectUnautorized": false,
   },
 }
