@@ -19,7 +19,7 @@ let sequelize;
 if (config.use_env_variable) {
   console.log("there exists use_env_variable")
   sequelize = new Sequelize(process.env[config.use_env_variable], config, 
-    {ssl: { rejectUnauthorized: false }});
+    {dialect: "postgres", ssl: { rejectUnauthorized: false }});
 } else {
   sequelize = new Sequelize(config.database, config.username, config.password, config);
 }
