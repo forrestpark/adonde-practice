@@ -20,7 +20,8 @@ const test = {
 }
 
 const production = {
-  "use_env_variable": "DATABASE_URL"
+  "use_env_variable": "DATABASE_URL",
+  "dialect": 'postgres',
 }
 
 module.exports = {development, test, production}
