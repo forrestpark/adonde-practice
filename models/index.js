@@ -18,7 +18,16 @@ console.log("config: ", config);
 let sequelize;
 if (config.use_env_variable) {
   console.log("there exists use_env_variable")
-  sequelize = new Sequelize(process.env[config.use_env_variable], config);
+  sequelize = new Sequelize(process.env[config.use_env_variable], {
+    dialect: "postgres",
+    dialectOptions: {
+      ssl: {
+        require: true,
+        // Ref.: https://github.com/brianc/node-postgres/issues/2009
+        rejectUnauthorized: false,
+      },      
+    },
+  });
 } else {
   sequelize = new Sequelize(config.database, config.username, config.password, config);
 }
